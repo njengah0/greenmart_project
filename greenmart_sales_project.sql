@@ -157,7 +157,7 @@ HAVING COUNT(*) > 20
 SELECT product_category, SUM(quantity) AS total_quantity
 FROM greenmart_sales
 GROUP BY product_category
-HAVING SUM(quantity) > 9
+HAVING SUM(quantity) > 100
 ;
 -- Show each store’s total revenue and filter only those stores that had an average transaction value greater than 300
 SELECT SUM(total_amount) AS total_revenue, AVG(total_amount) AS average_amount, store_location
