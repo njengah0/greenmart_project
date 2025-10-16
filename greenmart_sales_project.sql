@@ -1,6 +1,6 @@
 -- Employee Management Project 
 
--- # Part 1: Basic Queries
+-- ===== Part 1: Basic Queries =====
 
 -- Display all records from the GreenMart sales table
 SELECT *
@@ -79,7 +79,7 @@ FROM greenmart_sales
 ORDER BY store_location
 ;
 
--- # Part 2: Aggregation & Grouping
+-- ====== Part 2: Aggregation & Grouping ======
 
 -- Find the total revenue (sum of total_amount) from all transactions
 SELECT SUM(total_amount) AS total_revenue
@@ -139,7 +139,7 @@ ORDER BY total_quantity desc
 LIMIT 1
 ;
 
--- # Part 3: Filtering & Grouping (Intermediate Queries)
+-- ====== Part 3: Filtering & Grouping (Intermediate Queries) ======
 
 -- Show total sales per store location, but only for stores with total sales above 10,000
 SELECT SUM(total_amount) AS total_sales, store_location
